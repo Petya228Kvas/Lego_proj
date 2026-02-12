@@ -15,13 +15,13 @@ void lego_def(point *ptr1){    //Конструктор устанавливаю
 
 }
 
-void lego(point *ptr2, float a, float b, float c){ //стандартный конструктор
-    ptr2->x=a;
-    ptr2->y=b;
-    ptr2->z=c;
+void lego(point *ptr1, float a, float b, float c){ //стандартный конструктор
+    ptr1->x=a;
+    ptr1->y=b;
+    ptr1->z=c;
     
     printf("Конструктор обычный:\n");
-    printf("%.1f %.1f %.1f\n\n", ptr2->x, ptr2->y, ptr2->z);
+    printf("%.1f %.1f %.1f\n\n", ptr1->x, ptr1->y, ptr1->z);
 }
 void _lego_dist(point *ptr){  //деструктор
     printf("Память очищена.\n");
@@ -49,8 +49,6 @@ void in_o(point *ptr){ //метод ввода/вывода
 }
 
 void compr(point *ptr1, point *ptr2){ //метод сравнения точек 
-    float a, b, c;
-    
     if(ptr1->x > ptr2->x) printf("obj4(x) больше obj5(x)\n\n");
     else if(ptr1->x < ptr2->x) printf("obj4(x) меньше obj5(x)\n\n");
     else printf("X равны\n\n");
