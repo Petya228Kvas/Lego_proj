@@ -39,9 +39,9 @@ void lego_copy(point *ptr3, point *ptr2){ //конструктор копиро�
 
 void in_o(point *ptr){ //метод ввода/вывода
     printf("Введите координаты(x y z): ");
-    if(scanf("%f %f %f", &ptr->x, &ptr->y, &ptr->z) != 3){
+    if(scanf("%f %f %f", &ptr->x, &ptr->y, &ptr->z) != 3 || ptr->x == EOF || ptr->y == EOF || ptr->z == EOF){
         printf("~~~~Неправильный ввод, Артём Леонидович!~~~~\n");
-        return;
+        exit(1);
     }
 
     printf("Ваши координаты: x: %.1f; y: %.1f; z: %.1f\n", ptr->x, ptr->y, ptr->z);
