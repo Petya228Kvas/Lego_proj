@@ -7,6 +7,8 @@ typedef struct {
 } point;
 
 void lego_def(point *ptr1);
+
+void lego_print(point *ptr);
  
 void lego(point *ptr2, float, float, float);
 

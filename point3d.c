@@ -9,11 +9,14 @@ void lego_def(point *ptr1){    //Конструктор устанавливаю
     ptr1->x=0.0;
     ptr1->y=0.0;
     ptr1->z=0.0;
-
-    printf("Конструктор Дефолтный:\n");
-    printf("%.1f %.1f %.1f\n\n", ptr1->x, ptr1->y, ptr1->z);
-
+    
+    printf("Выставлены значения полей по умолчанию: %.1f %.1f %.1f\n\n", ptr1->x, ptr1->y, ptr1->z);
 }
+void lego_print(point *ptr1){
+    printf("Значения конструктора: %.1f %.1f %.1f\n\n", ptr1->x, ptr1->y, ptr1->z);
+
+} //вывод значений конструктора
+
 
 void lego(point *ptr1, float a, float b, float c){ //стандартный конструктор
     ptr1->x=a;
@@ -24,17 +27,20 @@ void lego(point *ptr1, float a, float b, float c){ //стандартный ко
     printf("%.1f %.1f %.1f\n\n", ptr1->x, ptr1->y, ptr1->z);
 }
 void _lego_dist(point *ptr){  //деструктор
-    printf("Память очищена.\n");
+    ptr->x=0.0;
+    ptr->y=0.0;
+    ptr->z=0.0;
     free(ptr);
+    printf("Память очищена.\n");
 }
 
-void lego_copy(point *ptr3, point *ptr2){ //конструктор копирования
-    ptr3->x = ptr2->x;
-    ptr3->y = ptr2->y;
-    ptr3->z = ptr2->z;
+void lego_copy(point *left, point *rgt){ //конструктор копирования
+    left->x = rgt->x;
+    left->y = rgt->y;
+    left->z = rgt->z;
 
     printf("Конструктор копирования:\n");
-    printf("%.1f %.1f %.1f\n\n", ptr3->x, ptr3->y, ptr3->z);
+    printf("%.1f %.1f %.1f\n\n", left->x, left->y, left->z);
 }
 
 void in_o(point *ptr){ //метод ввода/вывода

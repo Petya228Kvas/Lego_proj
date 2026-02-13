@@ -7,7 +7,7 @@
 int main(){
     point *obj1 = malloc(sizeof(point));
     lego_def(obj1); //конструктор дефолтный
-    
+    lego_print(obj1);
 
     point *obj2 = malloc(sizeof(point));
     lego(obj2, 2, 3.5, 7); //обычный конструктор 
