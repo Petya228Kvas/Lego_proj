@@ -1,38 +1,41 @@
 #ifndef POINT_H 
 #define POINT_H
+#include "../bitatom/bitatom.h"
+
 typedef struct {
     float x;
     float y;
     float z;
-} point;
+    ATOM *at;
+} POINT;
  
 
-void lego_def(point *ptr1);
+void lego_def(POINT *ptr1);
 
-void lego_print(point *ptr);
+void lego_print(POINT *ptr);
  
-void lego(point *ptr2, float, float, float);
+void lego(POINT *ptr2, float, float, float);
 
-void lego_copy(point *ptr3, point *ptr2);
+void lego_copy(POINT *ptr3, POINT *ptr2);
 
-void _lego_dist(point *ptr);
+void _lego_dist(POINT *ptr);
 
-void in_o(point *ptr);
+void in_o(POINT *ptr);
 
-void compr(point *, point *);
+void compr(POINT *, POINT *);
 
-void setter(point *ptr, float x, float y, float z);
+void setter(POINT *ptr, float x, float y, float z);
 
-void inc(point *ptr);
+void inc(POINT *ptr);
 
-void dec(point *ptr);
+void dec(POINT *ptr);
 
-void dist(point *ptr1, point *ptr2);
+void dist(POINT *ptr1, POINT *ptr2);
 
-void bias(point *, point *, point *);
+void bias(POINT *, POINT *, POINT *);
 
-void p_rand(point *);
+void p_rand(POINT *);
 
-void eiler(point *,float corner, char ch);
+void eiler(POINT *,float corner, char ch);
 
 #endif

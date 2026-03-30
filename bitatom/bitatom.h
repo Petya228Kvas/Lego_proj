@@ -1,7 +1,8 @@
 #ifndef BITATOM_H
 #define BITATOM_H
 #include <stdbool.h>
-
+#include "../point/point3d.h"
+#include "../contdict.h"
 //#define FIRST
 #define SECOND
 
@@ -41,13 +42,6 @@ typedef struct{    //Выравнивание полей структры с п�
     DICT *dt; 
 } ATOM;
 #endif
-
-typedef struct{
-    float x, y, z;
-    ATOM *at;
-   
-}POINT;
-
 
 void lego_bit(POINT *obj, UI num, UI met, UI grp, UI per); //Конструктор
 void def_bit(POINT *obj); // Дефолтный конструктор

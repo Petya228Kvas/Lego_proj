@@ -2,17 +2,17 @@
 #include <stdlib.h>
 #include <math.h>
 #include "point/point3d.h"
-#include "contdict.h"
 #include "bitatom/bitatom.h"
+#include "contdict.h"
 #include "point/point3d.c"
 #include "bitatom/bitatom.c"
 #include "contdict.c"
 
 void bit_a();
-void point_f();
+void POINT_f();
 
 int main(){
-   point_f();
+   POINT_f();
 //   bit_a();
 
 
@@ -77,15 +77,15 @@ void bit_a(){
  
 }
 
-void point_f(){
-    point *obj1 = malloc(sizeof(point));
+void POINT_f(){
+    POINT *obj1 = malloc(sizeof(POINT));
     lego_def(obj1); //конструктор дефолтный
     lego_print(obj1);
 
-    point *obj2 = malloc(sizeof(point));
+    POINT *obj2 = malloc(sizeof(POINT));
     lego(obj2, 2, 3.5, 7); //обычный конструктор 
 
-    point *obj3 = malloc(sizeof(point));
+    POINT *obj3 = malloc(sizeof(POINT));
     lego_copy(obj3, obj2); //конструктор копирования
 
     _lego_dist(obj1);
@@ -93,9 +93,9 @@ void point_f(){
     _lego_dist(obj3);
 
     puts("\n----Методы на оценку \"3\".----\n\n"); 
-    point *obj4 = malloc(sizeof(point));
-    point *obj5 = malloc(sizeof(point));
-    point *obj6 = malloc(sizeof(point));
+    POINT *obj4 = malloc(sizeof(POINT));
+    POINT *obj5 = malloc(sizeof(POINT));
+    POINT *obj6 = malloc(sizeof(POINT));
     in_o(obj4); //метод ввод/вывод
     lego(obj5, 9, 1, 4);
     compr(obj4, obj5); //сравнение точек
@@ -108,13 +108,13 @@ void point_f(){
     _lego_dist(obj6);
 
     puts("\n----Методы на оценку \"4\".----\n\n"); 
-    point *obj7 = malloc(sizeof(point));
-    point *obj8 = malloc(sizeof(point));
+    POINT *obj7 = malloc(sizeof(POINT));
+    POINT *obj8 = malloc(sizeof(POINT));
 
-    point *obj9 = malloc(sizeof(point));
-    point *objnew = malloc(sizeof(point));
-    point *vec1 = malloc(sizeof(point));
-    point *obj10 = malloc(sizeof(point));
+    POINT *obj9 = malloc(sizeof(POINT));
+    POINT *objnew = malloc(sizeof(POINT));
+    POINT *vec1 = malloc(sizeof(POINT));
+    POINT *obj10 = malloc(sizeof(POINT));
     in_o(obj7); //ввод/ввывод
     in_o(obj8);
     dist(obj7, obj8); //определение дистанции от одной точки до другой
@@ -132,10 +132,10 @@ void point_f(){
     _lego_dist(obj10);
 
     puts("\n----Методы на оценку \"5\".----\n\n"); 
-    point *obj11 = malloc(sizeof(point));
-   /* point *new_corner1 = malloc(sizeof(point));
-    point *new_corner2 = malloc(sizeof(point));
-    point *new_corner3 = malloc(sizeof(point));
+    POINT *obj11 = malloc(sizeof(POINT));
+   /* POINT *new_corner1 = malloc(sizeof(POINT));
+    POINT *new_corner2 = malloc(sizeof(POINT));
+    POINT *new_corner3 = malloc(sizeof(POINT));
  */ in_o(obj11);  //заполняем поля объекта
     eiler(obj11, 30, 'z'); // крутим точку вокруг всех осей
     eiler(obj11, 30, 'x');

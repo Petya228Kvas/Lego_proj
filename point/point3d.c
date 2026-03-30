@@ -5,20 +5,20 @@
 #include <math.h>
 #include <ctype.h>
 
-void lego_def(point *ptr1){    //Конструктор устанавливающий дефолтные значения полей
+void lego_def(POINT *ptr1){    //Конструктор устанавливающий дефолтные значения полей
     ptr1->x=0.0;
     ptr1->y=0.0;
     ptr1->z=0.0;
     
     printf("Выставлены значения полей по умолчанию: %.1f %.1f %.1f\n\n", ptr1->x, ptr1->y, ptr1->z);
 }
-void lego_print(point *ptr1){
+void lego_print(POINT *ptr1){
     printf("Значения конструктора: %.1f %.1f %.1f\n\n", ptr1->x, ptr1->y, ptr1->z);
 
 } //вывод значений конструктора
 
 
-void lego(point *ptr1, float a, float b, float c){ //стандартный конструктор
+void lego(POINT *ptr1, float a, float b, float c){ //стандартный конструктор
     ptr1->x=a;
     ptr1->y=b;
     ptr1->z=c;
@@ -26,7 +26,7 @@ void lego(point *ptr1, float a, float b, float c){ //стандартный ко
     printf("Конструктор обычный:\n");
     printf("%.1f %.1f %.1f\n\n", ptr1->x, ptr1->y, ptr1->z);
 }
-void _lego_dist(point *ptr){  //деструктор
+void _lego_dist(POINT *ptr){  //деструктор
     ptr->x=0.0;
     ptr->y=0.0;
     ptr->z=0.0;
@@ -35,7 +35,7 @@ void _lego_dist(point *ptr){  //деструктор
 
 }
 
-void lego_copy(point *left, point *rgt){ //конструктор копирования
+void lego_copy(POINT *left, POINT *rgt){ //конструктор копирования
     left->x = rgt->x;
     left->y = rgt->y;
     left->z = rgt->z;
@@ -44,7 +44,7 @@ void lego_copy(point *left, point *rgt){ //конструктор копиров
     printf("%.1f %.1f %.1f\n\n", left->x, left->y, left->z);
 }
 
-void in_o(point *ptr){ //метод ввода/вывода
+void in_o(POINT *ptr){ //метод ввода/вывода
     printf("Введите координаты(x y z): ");
     if(scanf("%f %f %f", &ptr->x, &ptr->y, &ptr->z) != 3 || ptr->x == EOF || ptr->y == EOF || ptr->z == EOF){
         printf("~~~~Неправильный ввод, Артём Леонидович!~~~~\n");
@@ -55,7 +55,7 @@ void in_o(point *ptr){ //метод ввода/вывода
 
 }
 
-void compr(point *ptr1, point *ptr2){ //метод сравнения точек 
+void compr(POINT *ptr1, POINT *ptr2){ //метод сравнения точек 
     if(ptr1->x > ptr2->x) printf("obj4(x) больше obj5(x)\n\n");
     else if(ptr1->x < ptr2->x) printf("obj4(x) меньше obj5(x)\n\n");
     else printf("X равны\n\n");
@@ -69,7 +69,7 @@ void compr(point *ptr1, point *ptr2){ //метод сравнения точек
     else printf("Z равны\n\n");
 
 }
-void setter(point *ptr, float x, float y, float z){ //сеттер(проверка значений и присваивание им значения)
+void setter(POINT *ptr, float x, float y, float z){ //сеттер(проверка значений и присваивание им значения)
     if(x < 100 && y < 100 && z < 100){
         ptr->x = x;
         ptr->y = y;
@@ -82,7 +82,7 @@ void setter(point *ptr, float x, float y, float z){ //сеттер(провер�
     }
 }
 
-void inc(point *ptr){ //инкрементирование координат точек
+void inc(POINT *ptr){ //инкрементирование координат точек
     printf("Ваши координаты до инкрементации были такими: x: %.1f; y: %.1f; z: %.1f\n", ptr->x, ptr->y, ptr->z);
     ptr->x++;
     ptr->y++;
@@ -90,7 +90,7 @@ void inc(point *ptr){ //инкрементирование координат т
     printf("Ваши координаты стали такими после инкрементации: x: %.1f; y: %.1f; z: %.1f\n", ptr->x, ptr->y, ptr->z);
 
 }
-void dec(point *ptr){ // декрементирование координат точек
+void dec(POINT *ptr){ // декрементирование координат точек
     printf("Ваши координаты до декрементации были такими: x: %.1f; y: %.1f; z: %.1f\n", ptr->x, ptr->y, ptr->z);
     ptr->x--;
     ptr->y--;
@@ -99,7 +99,7 @@ void dec(point *ptr){ // декрементирование координат �
 
 }
 
-void dist(point *ptr1, point *ptr2){ // определение дистанции между точками
+void dist(POINT *ptr1, POINT *ptr2){ // определение дистанции между точками
     float ptr, a, b, c;
     a = (ptr2->x - ptr1->x); 
     b = (ptr2->y - ptr1->y); 
@@ -107,20 +107,20 @@ void dist(point *ptr1, point *ptr2){ // определение дистанци�
     ptr = a*a + b*b + c*c;
     printf("Дистанция от одной точки до другой равна: %.1f\n\n", sqrt(ptr));
 }
-void bias(point *ptr, point *new, point *vec){ // сдвиг точки по вектору
+void bias(POINT *ptr, POINT *new, POINT *vec){ // сдвиг точки по вектору
     new->x = ptr->x + vec->x;
     new->y = ptr->y + vec->y;
     new->z = ptr->z + vec->z;
     printf("Точка сместилась по координатам: х: %.1f; y: %.1f; z: %.1f.\n\n", new->x, new->y, new->z);
 }
-void p_rand(point *ptr){ // генерация точки в рандомном месте
+void p_rand(POINT *ptr){ // генерация точки в рандомном месте
     srand(time(NULL));
     ptr->x = rand() % 100;
     ptr->y = rand() % 100;
     ptr->z = rand() % 100;
     printf("Точка была создана случайно в координатах: x: %.1f; y: %.1f; z: %.1f.\n\n", ptr->x, ptr->y, ptr->z);
 }
-void eiler(point *ptr, float corner, char ch){ //поворот точка в пространстве Эйлера
+void eiler(POINT *ptr, float corner, char ch){ //поворот точка в пространстве Эйлера
     float rad;
     rad = corner * M_PI/180;
     char axis = tolower(ch);
