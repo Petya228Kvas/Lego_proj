@@ -12,13 +12,19 @@ void bit_a();
 void point_f();
 
 int main(){
-   point_f();
+//   point_f();
 //   bit_a();
-
-
-   return 0;
+   
+   POINT_D *obj = d_create();
+   d_put(obj, (void*)"first", (void*)"PETR"); 
+   d_free(obj);
+   return EXIT_SUCCESS;
 
 }
+
+
+
+
 
 void bit_a(){
     
