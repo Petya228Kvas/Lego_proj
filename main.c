@@ -1,10 +1,83 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "point3d.h"
-#include "point3d.c"
+#include "point/point3d.h"
+#include "contdict.h"
+#include "bitatom/bitatom.h"
+#include "point/point3d.c"
+#include "bitatom/bitatom.c"
+#include "contdict.c"
+
+void bit_a();
+void point_f();
 
 int main(){
+   point_f();
+//   bit_a();
+
+
+   return 0;
+
+}
+
+void bit_a(){
+    
+    printf("%zu\n", sizeof(ATOM));
+
+//Созда ём объект структуры POINT
+    POINT *obj1 = malloc(sizeof(POINT));
+    obj1->at = malloc(sizeof(ATOM)); // В нём же создаём объект типа struct ATOM
+    lego_bit(obj1, 101, 1, 8, 5); //Инициализируем объекта конструктором 
+    destr_bit(obj1); // Вызов деструктора
+
+    POINT *obj2 = malloc(sizeof(POINT)); // Также второй объект
+    obj2->at = malloc(sizeof(ATOM));
+    def_bit(obj2); // Дефолтный конструктор
+    destr_bit(obj2);
+
+    POINT *obj3 = malloc(sizeof(POINT));
+    obj3->at = malloc(sizeof(ATOM));
+    POINT *obj4 = malloc(sizeof(POINT));
+    obj4->at = malloc(sizeof(ATOM));
+    lego_bit(obj3, 102, 1, 9, 6);
+    lego_bit(obj4, 132, 4, 19, 9); //Демонстрация того, если будет превышено значение
+
+#ifdef SECOND   
+// Для оценки на 4.
+// Показ адресов полей объекта.
+    printf("& num: %p\n", &obj3->at->atom_num);  
+    printf("& metal: %p\n", &obj3->at->metal); 
+    printf("& group: %p\n", &obj3->at->group); 
+    printf("& period: %p\n", &obj3->at->period); 
+    printf("& x: %p\n", &obj3->x); 
+    printf("& y: %p\n", &obj3->y); 
+    printf("& z: %p\n", &obj3->z); 
+#endif
+
+    printf("Размер структуры: %zu байт\n", sizeof(obj3->at));
+    printf("Выравнивание структуры: %zd\n", _Alignof(obj3->at));
+
+    p_ar(obj3); //Вывод данных атома
+   
+    destr_bit(obj3);
+    destr_bit(obj4);
+
+    puts("~~Оценка 5~~");
+
+    UI *iron = malloc(sizeof(UI)); //Создание динамической переменной
+    add_at(iron, 100, 15, 2, 0); // Инициализация переменной значениями
+    print_atom(iron); // Вывод атома
+    set_num(iron, 22); // Изменение данных атома по отдельности
+    set_met(iron, 1);
+    set_per(iron, 10);
+    set_grp(iron, 55);
+    print_atom(iron);
+    atom_destr(iron);//деструктор
+
+ 
+}
+
+void point_f(){
     point *obj1 = malloc(sizeof(point));
     lego_def(obj1); //конструктор дефолтный
     lego_print(obj1);
@@ -69,5 +142,5 @@ int main(){
     eiler(obj11, 30, 'y');
 
     _lego_dist(obj11);
-    return 0;
+ 
 }
