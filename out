@@ -1,45 +1,496 @@
-16
-Коснтруктор: 101, 1, 8, 5
+Addres: 0x564cf2b4df40
+Next: 0x564cf2b4df20
+Key: 99
+Value: 198
+
+Addres: 0x564cf2b4df20
+Next: 0x564cf2b4df00
+Key: 98
+Value: 196
+
+Addres: 0x564cf2b4df00
+Next: 0x564cf2b4dee0
+Key: 97
+Value: 194
+
+Addres: 0x564cf2b4dee0
+Next: 0x564cf2b4dec0
+Key: 96
+Value: 192
+
+Addres: 0x564cf2b4dec0
+Next: 0x564cf2b4dea0
+Key: 95
+Value: 190
+
+Addres: 0x564cf2b4dea0
+Next: 0x564cf2b4de80
+Key: 94
+Value: 188
+
+Addres: 0x564cf2b4de80
+Next: 0x564cf2b4de60
+Key: 93
+Value: 186
+
+Addres: 0x564cf2b4de60
+Next: 0x564cf2b4de40
+Key: 92
+Value: 184
+
+Addres: 0x564cf2b4de40
+Next: 0x564cf2b4de20
+Key: 91
+Value: 182
+
+Addres: 0x564cf2b4de20
+Next: 0x564cf2b4de00
+Key: 90
+Value: 180
+
+Addres: 0x564cf2b4de00
+Next: 0x564cf2b4dde0
+Key: 89
+Value: 178
+
+Addres: 0x564cf2b4dde0
+Next: 0x564cf2b4ddc0
+Key: 88
+Value: 176
+
+Addres: 0x564cf2b4ddc0
+Next: 0x564cf2b4dda0
+Key: 87
+Value: 174
+
+Addres: 0x564cf2b4dda0
+Next: 0x564cf2b4dd80
+Key: 86
+Value: 172
+
+Addres: 0x564cf2b4dd80
+Next: 0x564cf2b4dd60
+Key: 85
+Value: 170
+
+Addres: 0x564cf2b4dd60
+Next: 0x564cf2b4dd40
+Key: 84
+Value: 168
+
+Addres: 0x564cf2b4dd40
+Next: 0x564cf2b4dd20
+Key: 83
+Value: 166
+
+Addres: 0x564cf2b4dd20
+Next: 0x564cf2b4dd00
+Key: 82
+Value: 164
+
+Addres: 0x564cf2b4dd00
+Next: 0x564cf2b4dce0
+Key: 81
+Value: 162
+
+Addres: 0x564cf2b4dce0
+Next: 0x564cf2b4dcc0
+Key: 80
+Value: 160
+
+Addres: 0x564cf2b4dcc0
+Next: 0x564cf2b4dca0
+Key: 79
+Value: 158
+
+Addres: 0x564cf2b4dca0
+Next: 0x564cf2b4dc80
+Key: 78
+Value: 156
+
+Addres: 0x564cf2b4dc80
+Next: 0x564cf2b4dc60
+Key: 77
+Value: 154
+
+Addres: 0x564cf2b4dc60
+Next: 0x564cf2b4dc40
+Key: 76
+Value: 152
+
+Addres: 0x564cf2b4dc40
+Next: 0x564cf2b4dc20
+Key: 75
+Value: 150
+
+Addres: 0x564cf2b4dc20
+Next: 0x564cf2b4dc00
+Key: 74
+Value: 148
+
+Addres: 0x564cf2b4dc00
+Next: 0x564cf2b4dbe0
+Key: 73
+Value: 146
+
+Addres: 0x564cf2b4dbe0
+Next: 0x564cf2b4dbc0
+Key: 72
+Value: 144
+
+Addres: 0x564cf2b4dbc0
+Next: 0x564cf2b4dba0
+Key: 71
+Value: 142
+
+Addres: 0x564cf2b4dba0
+Next: 0x564cf2b4db80
+Key: 70
+Value: 140
+
+Addres: 0x564cf2b4db80
+Next: 0x564cf2b4db60
+Key: 69
+Value: 138
+
+Addres: 0x564cf2b4db60
+Next: 0x564cf2b4db40
+Key: 68
+Value: 136
+
+Addres: 0x564cf2b4db40
+Next: 0x564cf2b4db20
+Key: 67
+Value: 134
+
+Addres: 0x564cf2b4db20
+Next: 0x564cf2b4db00
+Key: 66
+Value: 132
+
+Addres: 0x564cf2b4db00
+Next: 0x564cf2b4dae0
+Key: 65
+Value: 130
+
+Addres: 0x564cf2b4dae0
+Next: 0x564cf2b4dac0
+Key: 64
+Value: 128
+
+Addres: 0x564cf2b4dac0
+Next: 0x564cf2b4daa0
+Key: 63
+Value: 126
+
+Addres: 0x564cf2b4daa0
+Next: 0x564cf2b4da80
+Key: 62
+Value: 124
+
+Addres: 0x564cf2b4da80
+Next: 0x564cf2b4da60
+Key: 61
+Value: 122
+
+Addres: 0x564cf2b4da60
+Next: 0x564cf2b4da40
+Key: 60
+Value: 120
+
+Addres: 0x564cf2b4da40
+Next: 0x564cf2b4da20
+Key: 59
+Value: 118
+
+Addres: 0x564cf2b4da20
+Next: 0x564cf2b4da00
+Key: 58
+Value: 116
+
+Addres: 0x564cf2b4da00
+Next: 0x564cf2b4d9e0
+Key: 57
+Value: 114
+
+Addres: 0x564cf2b4d9e0
+Next: 0x564cf2b4d9c0
+Key: 56
+Value: 112
+
+Addres: 0x564cf2b4d9c0
+Next: 0x564cf2b4d9a0
+Key: 55
+Value: 110
+
+Addres: 0x564cf2b4d9a0
+Next: 0x564cf2b4d980
+Key: 54
+Value: 108
+
+Addres: 0x564cf2b4d980
+Next: 0x564cf2b4d960
+Key: 53
+Value: 106
+
+Addres: 0x564cf2b4d960
+Next: 0x564cf2b4d940
+Key: 52
+Value: 104
+
+Addres: 0x564cf2b4d940
+Next: 0x564cf2b4d920
+Key: 51
+Value: 102
+
+Addres: 0x564cf2b4d920
+Next: 0x564cf2b4d900
+Key: 50
+Value: 100
+
+Addres: 0x564cf2b4d900
+Next: 0x564cf2b4d8e0
+Key: 49
+Value: 98
+
+Addres: 0x564cf2b4d8e0
+Next: 0x564cf2b4d8c0
+Key: 48
+Value: 96
+
+Addres: 0x564cf2b4d8c0
+Next: 0x564cf2b4d8a0
+Key: 47
+Value: 94
+
+Addres: 0x564cf2b4d8a0
+Next: 0x564cf2b4d880
+Key: 46
+Value: 92
+
+Addres: 0x564cf2b4d880
+Next: 0x564cf2b4d860
+Key: 45
+Value: 90
+
+Addres: 0x564cf2b4d860
+Next: 0x564cf2b4d840
+Key: 44
+Value: 88
+
+Addres: 0x564cf2b4d840
+Next: 0x564cf2b4d820
+Key: 43
+Value: 86
+
+Addres: 0x564cf2b4d820
+Next: 0x564cf2b4d800
+Key: 42
+Value: 84
+
+Addres: 0x564cf2b4d800
+Next: 0x564cf2b4d7e0
+Key: 41
+Value: 82
+
+Addres: 0x564cf2b4d7e0
+Next: 0x564cf2b4d7c0
+Key: 40
+Value: 80
+
+Addres: 0x564cf2b4d7c0
+Next: 0x564cf2b4d7a0
+Key: 39
+Value: 78
+
+Addres: 0x564cf2b4d7a0
+Next: 0x564cf2b4d780
+Key: 38
+Value: 76
+
+Addres: 0x564cf2b4d780
+Next: 0x564cf2b4d760
+Key: 37
+Value: 74
+
+Addres: 0x564cf2b4d760
+Next: 0x564cf2b4d740
+Key: 36
+Value: 72
+
+Addres: 0x564cf2b4d740
+Next: 0x564cf2b4d720
+Key: 35
+Value: 70
+
+Addres: 0x564cf2b4d720
+Next: 0x564cf2b4d700
+Key: 34
+Value: 68
+
+Addres: 0x564cf2b4d700
+Next: 0x564cf2b4d6e0
+Key: 33
+Value: 66
+
+Addres: 0x564cf2b4d6e0
+Next: 0x564cf2b4d6c0
+Key: 32
+Value: 64
+
+Addres: 0x564cf2b4d6c0
+Next: 0x564cf2b4d6a0
+Key: 31
+Value: 62
+
+Addres: 0x564cf2b4d6a0
+Next: 0x564cf2b4d680
+Key: 30
+Value: 60
+
+Addres: 0x564cf2b4d680
+Next: 0x564cf2b4d660
+Key: 29
+Value: 58
+
+Addres: 0x564cf2b4d660
+Next: 0x564cf2b4d640
+Key: 28
+Value: 56
+
+Addres: 0x564cf2b4d640
+Next: 0x564cf2b4d620
+Key: 27
+Value: 54
+
+Addres: 0x564cf2b4d620
+Next: 0x564cf2b4d600
+Key: 26
+Value: 52
+
+Addres: 0x564cf2b4d600
+Next: 0x564cf2b4d5e0
+Key: 25
+Value: 50
+
+Addres: 0x564cf2b4d5e0
+Next: 0x564cf2b4d5c0
+Key: 24
+Value: 48
+
+Addres: 0x564cf2b4d5c0
+Next: 0x564cf2b4d5a0
+Key: 23
+Value: 46
+
+Addres: 0x564cf2b4d5a0
+Next: 0x564cf2b4d580
+Key: 22
+Value: 44
+
+Addres: 0x564cf2b4d580
+Next: 0x564cf2b4d560
+Key: 21
+Value: 42
+
+Addres: 0x564cf2b4d560
+Next: 0x564cf2b4d540
+Key: 20
+Value: 40
+
+Addres: 0x564cf2b4d540
+Next: 0x564cf2b4d520
+Key: 19
+Value: 38
+
+Addres: 0x564cf2b4d520
+Next: 0x564cf2b4d500
+Key: 18
+Value: 36
+
+Addres: 0x564cf2b4d500
+Next: 0x564cf2b4d4e0
+Key: 17
+Value: 34
+
+Addres: 0x564cf2b4d4e0
+Next: 0x564cf2b4d4c0
+Key: 16
+Value: 32
+
+Addres: 0x564cf2b4d4c0
+Next: 0x564cf2b4d4a0
+Key: 15
+Value: 30
+
+Addres: 0x564cf2b4d4a0
+Next: 0x564cf2b4d480
+Key: 14
+Value: 28
+
+Addres: 0x564cf2b4d480
+Next: 0x564cf2b4d460
+Key: 13
+Value: 26
+
+Addres: 0x564cf2b4d460
+Next: 0x564cf2b4d440
+Key: 12
+Value: 24
+
+Addres: 0x564cf2b4d440
+Next: 0x564cf2b4d420
+Key: 11
+Value: 22
+
+Addres: 0x564cf2b4d420
+Next: 0x564cf2b4d400
+Key: 10
+Value: 20
+
+Addres: 0x564cf2b4d400
+Next: 0x564cf2b4d3e0
+Key: 9
+Value: 18
+
+Addres: 0x564cf2b4d3e0
+Next: 0x564cf2b4d3c0
+Key: 8
+Value: 16
+
+Addres: 0x564cf2b4d3c0
+Next: 0x564cf2b4d3a0
+Key: 7
+Value: 14
+
+Addres: 0x564cf2b4d3a0
+Next: 0x564cf2b4d380
+Key: 6
+Value: 12
+
+Addres: 0x564cf2b4d380
+Next: 0x564cf2b4d360
+Key: 5
+Value: 10
+
+Addres: 0x564cf2b4d360
+Next: 0x564cf2b4d340
+Key: 4
+Value: 8
+
+Addres: 0x564cf2b4d340
+Next: 0x564cf2b4d320
+Key: 3
+Value: 6
+
+Addres: 0x564cf2b4d320
+Next: 0x564cf2b4d300
+Key: 2
+Value: 4
+
+Addres: 0x564cf2b4d300
+Next: (nil)
+Key: 1
+Value: 2
+
 Память очищена!
-
-Коснтруктор: 0, 0, 0, 0
-Память очищена!
-
-Коснтруктор: 102, 1, 9, 6
-Коснтруктор: 118, 1, 18, 7
-& num: 0x5566289892d4
-& metal: 0x5566289892d0
-& group: 0x5566289892d8
-& period: 0x5566289892dc
-& x: 0x5566289892b0
-& y: 0x5566289892b4
-& z: 0x5566289892b8
-Размер структуры: 8 байт
-Выравнивание структуры: 8
-
-	Данные объекта:
- Атомный номер: 102
- Метал/Неметал: 1
- Группа: 9
- Период: 6
-Память очищена!
-
-Память очищена!
-
-~~Оценка 5~~
-
---Данные атома--
-Номер: 100
-Группа: 15
-Период: 2
-Металл: 0
-
-
---Данные атома--
-Номер: 22
-Группа: 18
-Период: 7
-Металл: 1
-
-Память очищена!
-

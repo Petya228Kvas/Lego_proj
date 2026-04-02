@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdint.h>
 #include <stdlib.h>
 #include <math.h>
 #include "point/point3d.h"
@@ -15,10 +16,44 @@ int main(){
 //   point_f();
 //   bit_a();
    
-   POINT_D *obj = d_create();
-   d_put(obj, (void*)"first", (void*)"PETR"); 
-   d_free(obj);
-   return EXIT_SUCCESS;
+/*   d_put(obj, (void*)"two", (void*)"VOVA"); 
+   printf("%s\n", (char*)d_get(obj, (void*)"two") );
+   printf("%d\n", (int)obj->at->ct->size );
+   d_pr(obj);
+   d_remove(obj, "two");
+   d_remove(obj, "first");
+   d_pr(obj);
+   printf("%d\n", d_cont_k(obj, "first"));
+*/
+    POINT_D *obj = d_create();
+/*    for(int i = 1; i<1000; i++){
+        puts("11");
+        d_put(obj, (void*)(intptr_t)i, (void*)(intptr_t)(i*2));
+    }*/
+    
+   d_put(obj, (void*)"first", (void*)"VOVA"); 
+   d_put(obj, (void*)"two", (void*)"PETR"); 
+   d_put(obj, (void*)"three", (void*)"SASHA"); 
+   d_put(obj, (void*)"four", (void*)"MASHA");
+   d_put(obj, (void*)"fiwe", (void*)"PAPA"); 
+    d_pr(obj);
+   
+    printf("SIZE: %d\n", d_size(obj));
+    printf("%s\n", d_cont_k(obj, (void*)"first") ? "TRUE" : "FALSE");
+
+    
+    void **keys = d_key(obj);
+    for(int i = 0; i<obj->at->ct->size; i++){
+        printf("Ключ %d\n", (int)(intptr_t)keys[i]);
+    }
+    void **values = d_value(obj);
+    for(int i = 0; i<obj->at->ct->size; i++){
+        printf("Значение %d\n", (int)(intptr_t)values[i]);
+    }
+    obj = d_clear(obj);
+    d_pr(obj);
+    printf("SIZE: %d\n", d_size(obj));
+    return EXIT_SUCCESS;
 
 }
 
